@@ -1,0 +1,52 @@
+{
+  "revision_id": "ad5cb4484d3a95c4b03edaea2413630c92d65234a6c7fcdd8c4ba46002b86f2b",
+  "name": "apache",
+  "run_list": [
+    "recipe[apache::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apache": {
+      "version": "0.1.0",
+      "identifier": "6460d72d2565a5bdf3915f45676a15d941633b4c",
+      "dotted_decimal_identifier": "28253974962726309.53466576292505450.24022849108812",
+      "source": "../cookbooks/apache",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/jrmetzger/chef-infra-foundations",
+        "revision": "25ea9848bce0f3a22ef1e84126fcd1fba1470eb2",
+        "working_tree_clean": true,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/main",
+          "origin/main"
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/apache"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apache",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apache (0.1.0)": [
+
+      ]
+    }
+  }
+}
