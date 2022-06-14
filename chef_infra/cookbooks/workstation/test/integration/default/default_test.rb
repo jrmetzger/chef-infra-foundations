@@ -9,4 +9,3 @@ describe registry_key('System Policies', system_policies) do
   its('EnableLUA') { should eq 0 }
   its('ConsentPromptDebahviorAdmin') { should eq 0 }
 end
-
