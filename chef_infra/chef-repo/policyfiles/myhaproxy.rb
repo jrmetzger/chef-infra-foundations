@@ -4,7 +4,7 @@
 # https://docs.chef.io/policyfile/
 
 # A name that describes what the system you're building with Chef does.
-name 'company_web'
+name 'myhaproxy'
 
 # This lets you source cookbooks from your chef-repo.
 default_source :chef_repo, '../'
@@ -13,10 +13,7 @@ default_source :chef_repo, '../'
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'mychef_client::default', 'company_web::default'
+run_list 'myhaproxy::default'
 
 # Specify a custom source for a single cookbook:
-cookbook 'company_web', path: '../cookbooks/company_web'
-cookbook 'myiis', path: '../cookbooks/myiis'
-cookbook 'apache', path: '../cookbooks/apache'
-cookbook 'mychef_client', path: '../cookbooks/mychef_client'
+cookbook 'myhaproxy', path: '../cookbooks/myhaproxy'

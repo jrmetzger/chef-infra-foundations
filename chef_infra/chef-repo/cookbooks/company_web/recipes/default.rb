@@ -4,8 +4,7 @@
 #
 # Copyright:: 2022, The Authors, All Rights Reserved.
 
-case node['platform']
-when 'windows'
+if platform?('windows')
   include_recipe 'myiis::default'
 
   edit_resource(:template, 'C:\inetpub\wwwroot\Default.htm') do

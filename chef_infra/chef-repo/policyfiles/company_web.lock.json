@@ -1,7 +1,8 @@
 {
-  "revision_id": "1158a5490922512aa5e270b12e20255f5af01a61e55c3f86d3bf2f476e684437",
+  "revision_id": "866e157be477cf5396a5f91cf8774a3e3d498afa03289f964aa447d9e7a968a5",
   "name": "company_web",
   "run_list": [
+    "recipe[mychef_client::default]",
     "recipe[company_web::default]"
   ],
   "included_policy_locks": [
@@ -10,15 +11,15 @@
   "cookbook_locks": {
     "apache": {
       "version": "0.1.0",
-      "identifier": "6460d72d2565a5bdf3915f45676a15d941633b4c",
-      "dotted_decimal_identifier": "28253974962726309.53466576292505450.24022849108812",
+      "identifier": "4e7fe518e8f19f027aeed637141f9b531e1c82da",
+      "dotted_decimal_identifier": "22095670125588895.698116168160287.170781289775834",
       "source": "../cookbooks/apache",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/jrmetzger/chef-infra-foundations",
-        "revision": "25ea9848bce0f3a22ef1e84126fcd1fba1470eb2",
-        "working_tree_clean": true,
+        "revision": "101118d65ffa2fc38a4fbb83b88abc27e7628eb2",
+        "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/main",
@@ -29,17 +30,28 @@
         "path": "../cookbooks/apache"
       }
     },
+    "chef-client": {
+      "version": "12.3.4",
+      "identifier": "9e4148496618fe2253acba978d67921a5dc0b48a",
+      "dotted_decimal_identifier": "44544825045162238.9662150538136935.160641939715210",
+      "cache_key": "chef-client-12.3.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.4/download",
+        "version": "12.3.4"
+      }
+    },
     "company_web": {
       "version": "0.1.0",
-      "identifier": "b6039f7117df9c57d4b9e2c5de72319a103f0d2f",
-      "dotted_decimal_identifier": "51232429093412764.24722217812483698.54537767292207",
+      "identifier": "f8610209d9d5707985a55f05a5278ab857332900",
+      "dotted_decimal_identifier": "69912455607342448.34205417492292903.152524341586176",
       "source": "../cookbooks/company_web",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/jrmetzger/chef-infra-foundations",
-        "revision": "25ea9848bce0f3a22ef1e84126fcd1fba1470eb2",
-        "working_tree_clean": true,
+        "revision": "101118d65ffa2fc38a4fbb83b88abc27e7628eb2",
+        "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/main",
@@ -50,17 +62,60 @@
         "path": "../cookbooks/company_web"
       }
     },
+    "cron": {
+      "version": "7.0.4",
+      "identifier": "1a771290a93ef89e9aaeea022d519d5584fc554a",
+      "dotted_decimal_identifier": "7449271014604536.44643122361281873.172990628910410",
+      "cache_key": "cron-7.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/7.0.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/7.0.4/download",
+        "version": "7.0.4"
+      }
+    },
+    "logrotate": {
+      "version": "3.0.9",
+      "identifier": "c9fde2dbe9dfa3d0218d4b2031ed77bc9158a175",
+      "dotted_decimal_identifier": "56855621112815523.58583685890322925.131651776061813",
+      "cache_key": "logrotate-3.0.9-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/3.0.9/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/3.0.9/download",
+        "version": "3.0.9"
+      }
+    },
+    "mychef_client": {
+      "version": "0.1.0",
+      "identifier": "484ada0a78e99e7285e3d3fc7b873a0b89013be1",
+      "dotted_decimal_identifier": "20348498662189470.32235360905624455.63821217610721",
+      "source": "../cookbooks/mychef_client",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/jrmetzger/chef-infra-foundations",
+        "revision": "101118d65ffa2fc38a4fbb83b88abc27e7628eb2",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/main",
+          "origin/main"
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/mychef_client"
+      }
+    },
     "myiis": {
       "version": "0.2.1",
-      "identifier": "8c3ef25b7685b4f8206803c432b7d4d0df894ca5",
-      "dotted_decimal_identifier": "39475707376993716.69841425336119991.233993568603301",
+      "identifier": "eeea75e4b88eee0f92e2295ce8a117731546a040",
+      "dotted_decimal_identifier": "67248836526509806.4383624704878753.25783045627968",
       "source": "../cookbooks/myiis",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/jrmetzger/chef-infra-foundations",
-        "revision": "25ea9848bce0f3a22ef1e84126fcd1fba1470eb2",
-        "working_tree_clean": true,
+        "revision": "101118d65ffa2fc38a4fbb83b88abc27e7628eb2",
+        "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/main",
@@ -85,7 +140,23 @@
         ">= 0.0.0"
       ],
       [
+        "chef-client",
+        "= 12.3.4"
+      ],
+      [
         "company_web",
+        ">= 0.0.0"
+      ],
+      [
+        "cron",
+        "= 7.0.4"
+      ],
+      [
+        "logrotate",
+        "= 3.0.9"
+      ],
+      [
+        "mychef_client",
         ">= 0.0.0"
       ],
       [
@@ -97,6 +168,16 @@
       "apache (0.1.0)": [
 
       ],
+      "chef-client (12.3.4)": [
+        [
+          "cron",
+          ">= 4.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.9.0"
+        ]
+      ],
       "company_web (0.1.0)": [
         [
           "myiis",
@@ -104,6 +185,18 @@
         ],
         [
           "apache",
+          ">= 0.0.0"
+        ]
+      ],
+      "cron (7.0.4)": [
+
+      ],
+      "logrotate (3.0.9)": [
+
+      ],
+      "mychef_client (0.1.0)": [
+        [
+          "chef-client",
           ">= 0.0.0"
         ]
       ],

@@ -1,19 +1,20 @@
-name 'apache'
+name 'mychef_client'
 maintainer 'Jon Metzger'
 maintainer_email 'jon@chef.com'
 license 'All Rights Reserved'
-description 'Installs/Configures apache'
+description 'Installs/Configures mychef_client'
 version '0.1.0'
-chef_version '>= 14.0'
+chef_version '>= 16.0'
+depends 'chef-client'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/apache/issues'
+# issues_url 'https://github.com/<insert_org_here>/mychef_client/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/apache'
+# source_url 'https://github.com/<insert_org_here>/mychef_client'

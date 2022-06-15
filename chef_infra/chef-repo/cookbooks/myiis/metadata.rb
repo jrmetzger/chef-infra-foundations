@@ -1,6 +1,6 @@
 name 'myiis'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Jon Metzger'
+maintainer_email 'jon@chef.com'
 license 'All Rights Reserved'
 description 'Installs/Configures myiis'
 version '0.2.1'

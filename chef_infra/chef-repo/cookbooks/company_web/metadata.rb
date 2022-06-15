@@ -1,6 +1,6 @@
 name 'company_web'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Jon Metzger'
+maintainer_email 'jon@chef.com'
 license 'All Rights Reserved'
 description 'Installs/Configures company_web'
 version '0.1.0'
